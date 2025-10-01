@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     
+    <meta charset="UTF-8" />
+      <title>Imagen centrada con descripción</title>
+      <style>
+
+        .contenedor {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 30px auto;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenedor img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .descripcion {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .galeria-flex {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-start;
+
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .item-galeria-solo {
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .item-galeria-solo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .img-izquierda {
+            border: 2px solid green;
+        }
+
+        .img-centro {
+            border: 2px solid orange;
+        }
+
+        .img-derecha {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+        <h1>
+        PRUEBAS
+            </h1>
+        <h2>Imagen Centrada</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquid maiores officiis perferendis delectus?
+        Obcaecati alias expedita, assumenda incidunt consectetur praesentium neque voluptas fuga soluta illo asperiores
+        perferendis tempore cumque atque saepe tenetur quos, sunt, rerum ratione explicabo ullam veritatis doloribus et.
+        Consequuntur praesentium dolore recusandae porro perspiciatis aliquid nostrum.</p>
+
+    <div class="contenedor">
+          <img src="IMG/images.jpg" a0lt="Imagen descriptiva" alt="Imagen descriptiva" />
+          <p class="descripcion">Esta es la descripción centrada debajo de la imagen.</p>
+    </div>
+
+    <h2>Galeria de Imagenes</h2>
+
+    <div class="galeria-flex">
+
+        <div class="item-galeria-solo img-izquierda">
+            <img src="IMG/720p-5wfq1i9etj969c3k.jpg" alt="Imagen Izquierda" />
+            <p class="caption">Izquierda</p>
+        </div>
+
+        <div class="item-galeria-solo img-centro">
+            <img src="IMG/3840-x-2160-nature-9rd0qsey7lpkhn9t.jpg" alt="Imagen Centro" />
+            <p class="caption">Centro</p>
+        </div>
+
+        <div class="item-galeria-solo img-derecha">
+            <img src="IMG/1366x768-hd-desktop-ggo7p3o1yrvvxkgn.jpg" alt="Imagen Derecha" />
+            <p class="caption">Derecha</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
